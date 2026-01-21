@@ -22,7 +22,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"characters/jengoy": "res://dialogues/characters/jengoy.dch",
 "jengaifu": "res://dialogues/characters/jengaifu.dch",
 "jengoy": "res://dialogues/characters/jengoy.dch",
 "ua175": "res://dialogues/characters/ua175.dch",
