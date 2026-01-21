@@ -1,0 +1,31 @@
+[background arg="res://assets/sprites/simpsons.jpg" fade="0.0"]
+join jengoy left [animation="Slide From Left" wait="true"]
+join jengaifu right [animation="Slide From Right" wait="true"]
+jengaifu: Hello, [speed=0.1] Jengoy-kun
+jengaifu: Do you want to play jenga with my friends tomorrow?
+- Bogos binted
+- Remember that time we played Jenga in the WTC
+leave jengoy [animation="Bounce Out"]
+leave jengaifu [animation="Bounce Out" wait="true"]
+[background arg="res://assets/sprites/fg-bg.jpg" fade="0.0"]
+join jengoy left [animation="Zoom In"]
+join jengaifu right
+jengoy: Hiii
+jengaifu: Oh, Jengoy-kun!
+jengaifu: Thanks for coming, these are my friends
+leave jengaifu
+join ua175 right [mirrored="true"]
+ua175: Yo waddup
+leave ua175
+join wtc (Wtc) right
+wtc: Nice to meet you, Jengoy-kun!
+jengoy: Oh! Twins
+wtc (Wtc Blush): ...
+[wait time="1.5"]
+ua175: omae wa mou shindeiru
+join ua175 right [animation="Slide From Right" wait="true" mirrored="true"]
+leave ua175 [animation="Fade Out Down" length="0.2" wait="true"]
+leave jengoy [animation="Fade Out Up"]
+update wtc (Wtc Done) center
+[wait time="5.0"]
+THE END

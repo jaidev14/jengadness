@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://casja73jo747b"]
+
+[ext_resource type="Script" uid="uid://davbrwhm4hncp" path="res://scripts/test.gd" id="1_errlg"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_errlg")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 645.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.42477024, 0.29081193, 0.57682604, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "start cinema"
+
+[connection signal="button_down" from="Control/MarginContainer/VBoxContainer/Button" to="." method="_on_button_button_down"]
